@@ -136,7 +136,21 @@
       width: 100%;
       height: 100vh;
       background-color: rgb(5, 5, 53);
-      background-image: linear-gradient(65deg, #457b95 0%, rgb(5, 5, 53) 100%);
+      background-image: linear-gradient(45deg,#ebde96, #a56da3, var(--main-blue), var(--main-dark-blue));
+      background-size: 200% 200%;
+      animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 70%;
+      }
+      50% {
+        background-position: 100% 70%;
+      }
+      100% {
+        background-position: 0% 70%;
+      }
     }
     
     .welcome-section p {
